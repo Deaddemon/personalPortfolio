@@ -1,0 +1,674 @@
+/* navbar css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      
+    font-family: 'Lato', sans-serif;
+}
+/* .nav-menus-class{
+     display: inline-block;
+     float : left;
+} */
+header {
+   
+    width: 100%;
+    float: left; 
+    background-color: #fff;  
+}
+.nav-menus{
+    float:right;
+    display: flex;
+    
+}
+.nav-menus li{
+    list-style: none;
+    /* position: relative; */
+    padding: 20px 30px ;
+}
+.sub-menus{
+    position: absolute;
+    padding:20px 20px 10px 0;
+    display: none;
+     
+}
+a{
+    text-decoration: none;
+    color:black;
+     
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+a:hover{
+    color:rgb(115, 230, 186) ;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+ 
+.cat{
+    padding:20px;
+    cursor: pointer;
+    color:rgb(12, 12, 12);
+    
+    
+}
+.cat:hover{
+    /* color: rgb(226, 215, 119);   */
+    color:rgb(115, 230, 186) ;
+    
+}
+
+/* new class */
+.sub-menus.active{
+    display:block;
+     
+}
+ 
+.toggle-btn{
+    float: right;
+    padding:20px;
+    display: none;
+    cursor: pointer;
+    font-weight: 600;
+    color:rgb(115, 230, 186);
+     
+}
+.nav-menus.active{
+    display: block;
+    margin-top: 0%;
+         width:100%;
+        padding:10px;
+        line-height: 20px;
+        justify-content: center ;
+        margin-left: 0%;
+        background-color:      #ffff;
+         
+        text-align: center;
+        z-index: 2;
+} 
+/* box-shadow: 0px 0px 10px rgb(115,230,186); */
+/* opening-line */
+/*.opening-line{
+    background-color: coral;
+    text-align: center;
+     position: absolute;
+    top: 200px;
+    left: 500px; 
+    font-size: xx-large;
+    font-weight: bolder;
+    color:rgb(204, 21, 21); 
+     text-shadow:20px black;
+     
+} */
+.p2{
+    background-color:rgb(115, 230, 186) ;
+    
+    padding:85px 10px 30px  ;
+    /* line-height: 30px; */
+     
+}
+.opening-line{
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 55px;
+    /* position: relative;  due to this i was not able to click on the links*/ 
+    color:white;
+    width:50%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+   
+
+}
+.caty{
+    
+     
+    /* margin-bottom: 0%; */
+    width:400px;
+    float:right;
+    position: relative;
+    height: 140px;
+}
+.caty2{
+    width:400px;
+    float:right;
+     display:none;
+     height:140px;
+
+}
+.caty2.active{
+    display: block;
+}
+.openinglinespan{
+    display: block;
+    font-family: 'Caveat Brush', cursive;
+}
+
+
+
+
+
+/*  
+.top{
+    height: 1px;
+    background-color:   #024242;
+     position:relative; 
+} */
+ 
+/* 
+education part and hobbies  p3*/
+hr{
+    /* background-color:rgb(115, 230, 186);
+    border:none;
+    height:1px;
+     */
+     border-bottom: 0;
+     width:75%;
+      margin-left:auto;
+      margin-right: auto;
+     /* display: none; */
+}
+/* seond part of education column  */
+.education{
+    margin-top:6%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom:6%;
+    display:none;
+     
+}
+.educlass{
+    
+   line-height: 40px;
+   background-color: white;
+   border:2px solid;
+   border-color:rgb(115, 230, 186) ;
+   border-radius:3px;
+   padding:3%;
+   width:30%;
+   margin-right:22%;
+   /* display:none; */
+}
+.education.active{
+    display:block;
+}
+.edubtnParent{
+     background-color: violet;
+     position: relative;
+     margin-right:15%;
+    
+}
+.edubtn{
+     
+    position: absolute;
+    top:50%;
+    background-color: white;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    border-radius:3px;
+    padding:4px;
+    font-weight: bold;
+}
+.educlass:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.edubtn:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(115, 230, 186) ;
+}
+
+/* second part of hobbies column  */
+.education2{
+    margin-top:6%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 4%;
+    margin-bottom:6%;
+    display:none;
+}
+.educlass2{
+    
+   line-height: 40px;
+   background-color: white;
+   border:2px solid;
+   border-color:rgb(115, 230, 186) ;
+   border-radius:3px;
+   padding:3%;
+   width:30%;
+
+    
+    margin-left:25%;
+}
+.edubtnParent2{
+     background-color: violet;
+     position: relative;
+    
+}
+.edubtn2{
+     
+    position: absolute;
+    top:50%;
+    background-color: white;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    border-radius:3px;
+    padding:4px;
+    font-weight: bold;
+    margin-right:10%;
+     
+}
+.educlass2:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+.edubtn2:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(115, 230, 186) ;
+}
+
+/* first part of education column  */
+
+.educationChild{
+    height:345.43px;
+     
+   
+}
+.educlassChildImg{
+     width:50%;
+      
+}
+.educationChild{
+    margin-top:6%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom:6%;
+     
+     
+}
+.educlassChild{
+    
+   line-height: 40px;
+   background-color: white;
+   border:2px solid;
+   border-color:rgb(115, 230, 186) ;
+   border-radius:3px;
+   padding:3%;
+   width:30%;
+   margin-right:22%;
+   /* display:none; */
+   background-color:rgb(115, 230, 186) ;
+}
+.educationChild.active{
+    display:block;
+}
+.edubtnParentChild{
+     background-color: violet;
+     position: relative;
+     margin-right:15%;
+    
+}
+.edubtnChild{
+     
+    position: absolute;
+    top:50%;
+    background-color: white;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    border-radius:3px;
+    padding:4px;
+    font-weight: bold;
+}
+.educlassChild:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.edubtnChild:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(115, 230, 186) ;
+}
+
+ 
+/*  first part of hobbies column  */
+
+.educationChild2{
+    height:345.43px;
+     
+   
+}
+.educlassChildImg2{
+     width:50%;
+      
+}
+.educationChild2{
+    margin-top:6%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 4%;
+    margin-bottom:6%;
+     
+}
+.educlassChild2{
+    
+   line-height: 40px;
+   background-color: white;
+   border:2px solid;
+   border-color:rgb(115, 230, 186) ;
+   border-radius:3px;
+   padding:3%;
+   width:30%;
+
+   background-color:rgb(115, 230, 186) ;
+    margin-left:25%;
+}
+.edubtnParentChild2{
+     background-color: violet;
+     position: relative;
+    
+}
+.edubtnChild2{
+     
+    position: absolute;
+    top:50%;
+    background-color: white;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    border-radius:3px;
+    padding:4px;
+    font-weight: bold;
+    margin-right:10%;
+     
+}
+.educlassChild2:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    
+    
+}
+.edubtnChild2:hover{
+    box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(115, 230, 186) ;
+}
+
+
+
+.p4{
+  
+    background-color:rgb(115, 230, 186) ;
+    font-weight: bold;
+    text-align: center;
+    padding-top : 6%;
+     
+    
+     
+}
+ .divSkills{
+    display:flex;
+} 
+.image{
+    width: 100px;
+    height: 100px;
+}
+.skills{
+    border-radius: 30%;
+    background-color: white;
+    padding:25px;
+    margin:10%;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+     
+}
+.h3skills{
+    background-color: white;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    border-radius:3px;
+    padding:6px;
+    font-weight: bold;
+    letter-spacing: 1px;
+      box-shadow:   0 5px 9px 0 rgba(0, 0, 0, 0.2);
+}
+ .h3skills:hover{
+    box-shadow:   none;
+
+     
+} 
+
+ 
+.skills1{
+    margin-bottom:4px;
+}
+.skills2a{
+    font-weight: bold;
+    text-decoration: none;
+
+}
+ 
+
+
+
+.p5{
+    display: flex;
+    background: linear-gradient(to bottom,   rgb(115, 230, 186) 50%,  transparent 40%);
+}
+.p5a{
+    width:50%;
+   
+}
+.p5b{
+    width:50%;
+   
+}
+.abutton{
+    margin-left:50%;
+    border-radius: 100%;
+    border: 2px solid black;
+    border-color:rgb(115, 230, 186) ;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(115, 230 , 186);
+
+}
+.bbutton{
+    margin-left:25%;
+    border: 2px solid black;
+    border-color: #fff ;
+    height: 200px;
+    width: 200px;
+    background-color: #ffff;
+
+}
+ 
+.bbutton1{
+    margin-left:25%;
+    border: 2px solid black;
+    border-color: #fff ;
+    height: 200px;
+    width: 200px;
+    background-color: #ffff;
+    display: none;
+
+}
+.bbutton2{
+    margin-left:25%;
+    border: 2px solid black;
+    border-color: #fff ;
+    height: 200px;
+    width: 200px;
+    background-color: #ffff;
+    display: none;
+
+}
+.imgp5{
+    width:50%;
+}
+
+.here{
+   text-decoration: underline;
+
+}
+
+.dot{
+   width:5%;
+}
+.p6{
+    margin-top:6%;
+    justify-content: center;
+     text-align:center;
+      
+}
+ 
+.p6a{
+    
+    letter-spacing: 15px;
+    height: 20px;
+}
+ 
+.p61{
+    margin-top:3%;
+    margin-bottom:3%;
+}
+.p6hr{
+    margin-bottom:6%;
+}
+
+
+
+
+
+
+
+@media (min-width:767px){
+    .p4{
+        background: linear-gradient(to bottom,   rgb(115, 230, 186) 60%,  transparent 40%);
+
+    }
+}
+
+@media (max-width:767px){
+    /* interest */
+    .abutton{
+        margin-left: 10%;
+    }
+    .bbutton{
+         margin-left:5%;
+    }
+    .bbutton1{
+        margin-left:5%;
+   }
+   .bbutton2{
+    margin-left:5%;
+}
+    .p4{
+  
+         
+        padding-top : 6%;
+        padding-bottom : 6%;
+        display: flex;
+        
+         
+    }
+    .divSkills{
+        display:block;
+    } 
+    .p5{
+        margin-top:6%;
+    }
+    .educlass2{
+    
+        line-height: 30px;
+    width:40%;
+}
+    .educlass{
+    
+            line-height: 30px;
+        width: 40%;}
+    .educlassChild{
+        width:40%;
+    }
+    .educlassChild2{
+        width:40%;
+    }
+
+ 
+
+
+
+
+
+
+
+    /* old */
+    .toggle-btn{
+        display: block;
+         
+    }
+    .nav-menus{
+    
+        display: none;
+        
+
+    }
+    /* .opening-line{
+        text-align: center;
+        position: absolute;
+        top: 200px; 
+        
+        font-size: 4px;
+       
+        font-weight: bolder;
+        color:white;
+        width:60px; 
+        height:60px;
+         text-shadow:20px black;
+         margin-left: 45%;
+         
+    } */
+    .p2{
+    font-size: inherit;
+    }
+    .openingline{
+       
+        width:100%;
+        justify-content: center;
+    }
+    .opening-line{
+       
+        width:100%;
+        text-align: center;
+        display: block;
+        
+     
+    
+    }
+    .cat{
+        color:rgb(115, 230, 186);
+       
+    }
+    .cats{
+        
+        height:150px;
+        width:200px;
+        float:none;
+        /* display:block; */
+        justify-content: center;
+        /* margin-top:7%; */
+        padding-bottom: 0;
+        margin-left: 32%;
+        /* margin-right: 30%; */
+         
+    }
+    
+    
+    
+}
